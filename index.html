@@ -1,16 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>复习</title>
+    <title>Rosemary的个人网页</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<h1>欢迎来到我的网页</h1>
-<h2>这只是一个用来复习我所学过的知识用的网页，并无其他作用</h2>
-<a href="https://ys.mihoyo.com/"
-title="还在犹豫吗？">
-所以说,原神启动</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">𝓡𝓸𝓼𝓮𝓶𝓪𝓻𝔂</a>
+            <ul class="nav-menu">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#games">游戏</a></li>
+                <li><a href="#contact">联系方式</a></li>
+                <li><a href="#more">更多</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <h1>欢迎来到我的个人网页</h1>
+        <p class="subtitle">探索、分享、连接</p>
+    </div>
+
+    <div class="container">
+        <section id="about" class="section">
+            <div class="profile-card">
+                <img src="IMG_20240917_154354.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>𝓡𝓸𝓼𝓮𝓶𝓪𝓻𝔂</h1>
+                <p class="bio">你好！我是𝓡𝓸𝓼𝓮𝓶𝓪𝓻𝔂，欢迎来到我的个人空间！</p>
+                
+                <div class="social-icons">
+                    <a href="https://github.com/137458" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/afga643673" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="games" class="section">
+            <h2><i class="fas fa-gamepad"></i> 我在玩的游戏</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>使命召唤</h3>
+                    <p>第一人称射击游戏</p>
+                    <a href="https://www.callofduty.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+                <div class="game-card">
+                    <h3>和平精英</h3>
+                    <p>第三人称射击游戏</p>
+                    <a href="https://www.pubg.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> 联系方式</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:463690653@qq.com">联系邮箱1</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope-open"></i>
+                    <a href="mailto:gaaf14738@gmail.com">联系邮箱2</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+8619840789720">联系电话</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="more" class="section">
+            <h2><i class="fas fa-flask"></i> 脑洞大开</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i class="fas fa-atom"></i>
+                    <h3>可控核聚变</h3>
+                    <p>未来能源的革命性突破</p>
+                    <a href="画饼.html" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>星际跃迁</h3>
+                    <p>突破光速限制的曙光</p>
+                    <a href="画饼.html" class="btn">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>时光机</h3>
+                    <p>穿越时空的梦想</p>
+                    <a href="画饼.html" class="btn">查看详情</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="changelog-button" onclick="showChangelog()">
+        <i class="fas fa-history"></i>
+        更新日志
+    </div>
+
+    <div id="changelog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeChangelog()">&times;</span>
+            <h2>更新日志</h2>
+            <div class="changelog-entries">
+                <div class="changelog-entry">
+                    <h3>2024-12-01</h3>
+                    <ul>
+                        <li>新增导航栏</li>
+                        <li>优化页面布局</li>
+                        <li>添加更新日志功能</li>
+                        <li>引入Font Awesome图标库</li>
+                        <li>优化游戏卡片布局</li>
+                        <li>添加赞赏支持</li>
+                        <li>添加个人简介</li>
+                        
+                    </ul>
+                </div>
+                <div class="changelog-entry">
+                    <h3>2024-11-19</h3>
+                    <ul>
+                        <li>创建初始页面</li>
+                        <li>添加个人简介</li>
+                        <li>添加联系方式</li>
+                        <li>添加游戏卡片</li>
+                        <li>添加脑洞大开卡片</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 𝓡𝓸𝓼𝓮𝓶𝓪𝓻𝔂. All rights reserved.</p>
+    </footer>
+<div class="intro-button" onclick="showIntro()">
+    <i class="fas fa-user"></i>
+    个人简介
+</div>
+
+
+
+<div class="donate-button" onclick="showDonate()">
+    <i class="fas fa-gift"></i>
+    赞赏支持
+</div>
+    <script>
+    function showIntro() {
+        document.getElementById('intro-modal').style.display = 'block';
+    }
+    
+    function closeIntro() {
+        document.getElementById('intro-modal').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+        let changelogModal = document.getElementById('changelog-modal');
+        let donateModal = document.getElementById('donate-modal');
+        let introModal = document.getElementById('intro-modal');
+        
+        if (event.target == changelogModal) {
+            changelogModal.style.display = 'none';
+        }
+        if (event.target == donateModal) {
+            donateModal.style.display = 'none';
+        }
+        if (event.target == introModal) {
+            introModal.style.display = 'none';
+        }
+    }
+        function showChangelog() {
+            document.getElementById('changelog-modal').style.display = 'block';
+        }
+        
+        function closeChangelog() {
+            document.getElementById('changelog-modal').style.display = 'none';
+        }
+        
+        window.onclick = function(event) {
+            let modal = document.getElementById('changelog-modal');
+                if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    function showDonate() {
+        document.getElementById('donate-modal').style.display = 'block';
+    }
+    
+    function closeDonate() {
+        document.getElementById('donate-modal').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+        let changelogModal = document.getElementById('changelog-modal');
+        let donateModal = document.getElementById('donate-modal');
+        if (event.target == changelogModal) {
+            changelogModal.style.display = 'none';
+        }
+        if (event.target == donateModal) {
+            donateModal.style.display = 'none';
+        }
+    }
+</script>
+<div id="donate-modal" class="modal">
+    <div class="modal-content donate-content">
+        <span class="close-button" onclick="closeDonate()">&times;</span>
+        <h2>赞赏支持</h2>
+        <p class="donate-text">如果您喜欢我的网页，欢迎赞赏支持！</p>
+        <div class="donate-options">
+            <div class="donate-item">
+                <h3><i class="fab fa-weixin"></i> 微信支付</h3>
+                <img src="wxpay.jpg" alt="微信支付二维码" class="qr-code">
+            </div>
+            <div class="donate-item">
+                <h3><i class="fab fa-alipay"></i> 支付宝</h3>
+                <img src="alipay.jpg" alt="支付宝二维码" class="qr-code">
+            </div>
+        </div>
+        <p class="donate-thanks">感谢您的支持！</p>
+    </div>
+</div>
+<div id="intro-modal" class="modal">
+    <div class="modal-content intro-content">
+        <span class="close-button" onclick="closeIntro()">&times;</span>
+        <h2>个人简介</h2>
+        <div class="intro-container">
+            <div class="intro-section">
+                <h3><i class="fas fa-info-circle"></i> 基本信息</h3>
+                <ul>
+                    <li><i class="fas fa-user"></i> 昵称：Rosemary</li>
+                    <li><i class="fas fa-heart"></i> 兴趣：编程、游戏、音乐</li>
+                </ul>
+            </div>
+            
+            <div class="intro-section">
+                <h3><i class="fas fa-code"></i> 技能特长</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 85%"></span></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-line"><span style="width: 75%"></span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="intro-section">
+                <h3><i class="fas fa-history"></i> 个人经历</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h4>个人网站上线</h4>
+                            <p>创建并维护个人网站，分享技术经验</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h4>开始学习编程</h4>
+                            <p>系统学习HTML和CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
